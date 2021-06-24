@@ -11,8 +11,8 @@ class Streamer(threading.Thread):
     def __init__(self, hostname, port):
         threading.Thread.__init__(self)
 
-        self.hostname = ''
-        self.port = 8485
+        self.hostname = hostname
+        self.port = port
         self.running = False
         self.streaming = False
         self.jpeg = None
